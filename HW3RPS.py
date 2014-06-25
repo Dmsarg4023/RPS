@@ -25,10 +25,15 @@ def compare(choice1, choice2):
     else:
         print("something is wrong.")
 rounds = int(raw_input("Enter number of rounds: "))
+player1_name = raw_input("Enter player 1 name: ")
+player2_name = raw_input("Enter player 2 name: ")
 counter = 0
-while counter !+ 3:    
+while counter != rounds:    
     choice1 = choice()
+    print("{} chooses: {}!!!".format(player1_name, choice1))
     choice2 = choice()
+    print("{} chooses: {}!!!".format(player2_name, choice2))
     compare(choice1, choice2)
     counter += 1
+print("{} and {} Thanks for playing!".format(player1_name, player2_name))
     
